@@ -38,7 +38,8 @@ requirements:
     - brush
     - cargo-auditable
     - cargo-bundle-licenses
-    - pkg-config
+    - if: linux
+      then: pkg-config
   host:
     - if: linux
       then:
